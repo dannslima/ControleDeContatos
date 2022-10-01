@@ -39,7 +39,8 @@ namespace ControleDeContatos.Controllers
 
         public IActionResult Apagar(int id)
         {
-
+           _contatoRepositorio.Apagar(id);
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
