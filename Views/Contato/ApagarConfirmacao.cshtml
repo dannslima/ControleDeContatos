@@ -1,9 +1,11 @@
-﻿@{
+﻿@model ContatoModel 
+
+@{
     ViewData["Title"] = "Confirmação apagar o contato";
 }
 
 <div class="text-center">
-    <h3>Realmente deseja apagar o contato (Danilo Lima) ?</h3>
+    <h3>Realmente deseja apagar o contato (@Model.Nome) </h3>
 </div>
 
 

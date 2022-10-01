@@ -12,7 +12,10 @@ namespace ControleDeContatos.Repositorio
         {
             _bancoContext = bancoContext;
         }
-
+        public ContatoModel ListarPorId(int id)
+        {
+            return _bancoContext.Contatos.FirstOrDefault(x => x.Id == id);
+        }
         public List<ContatoModel> BuscarTodos()
         {
             return _bancoContext.Contatos.ToList();
@@ -24,6 +27,21 @@ namespace ControleDeContatos.Repositorio
             return contato;
         }
 
-       
+        public ContatoModel Atualizar(ContatoModel contato)
+        {
+            ContatoModel contatoDB = ListarPorId(contato.Id);
+
+            if(contatoDB == null) throw new System.Exception("hovue um erro na atualizaçaõ do contato");
+
+            contatoDB.Nome = contato.Nome;
+            contatoDB.Email = contato.Email;
+            contatoDB.Celular = contato.Celular;
+
+            _bancoContext.Update(contatoDB);
+            _bancoContext.SaveChanges();
+            return contatoDB;
+        }
+
+        public ContatoModel Apagar
     }
 }
