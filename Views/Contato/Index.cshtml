@@ -1,5 +1,6 @@
 ﻿@model List<ContatoModel>
 
+
 @{
     ViewData["Title"] = "Listagem de contatos";
 }
@@ -10,6 +11,15 @@
         <a class="btn btn-primary role="button" asp-controller="Contato" asp-action="Criar">Adcionar um novo Contato</a>
     </div>
     <br />
+
+    <div class="alert alert-success" role="alert">
+        <button type="button" clas>X</button>
+      This is a success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <button>X</button>
+      This is a danger alert—check it out!
+    </div>
 
     <h1 class="display-4">Listagem de Contatos</h1>
 

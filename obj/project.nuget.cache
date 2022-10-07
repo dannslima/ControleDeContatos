@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Pgk5bFBEOQAZCLsalLvH8oZ3fMQFQmPuuuCy3PrtvAF3pb+UB6oW22beZIthPaUTMdmtGFrGB/JwHpEg56KIgg==",
+  "dgSpecHash": "G1HYfYJTIceTqmbQPY7W4JQbSmet4vCmQqa8CDp1w6PIkEl4u01DN0WwICXYcD+wIz/OD+Z8rxFbf3qr5Ncarw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Danilo_Lima\\Documents\\PROJETOS\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj",
   "expectedPackageFiles": [
@@ -111,7 +111,8 @@
     "C:\\Users\\Danilo_Lima\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Danilo_Lima\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Danilo_Lima\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Danilo_Lima\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Danilo_Lima\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Danilo_Lima\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
