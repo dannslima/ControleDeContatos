@@ -12,15 +12,24 @@
     </div>
     <br />
 
-    <div class="alert alert-success" role="alert">
-        <button type="button" clas>X</button>
-      This is a success alert—check it out!
+    @if(TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+        <button type="button" class="btn-danger btn-sm close-alert" arial-label="Close">X</button>
+        @TempData["MensagemSucesso"]
     </div>
-    <div class="alert alert-danger" role="alert">
-        <button>X</button>
-      This is a danger alert—check it out!
-    </div>
+    }
 
+      @if(TempData["MensagemErro"] != null)
+    {
+       <div class="alert alert-danger" role="alert">
+        <button type="button" class="btn-danger btn-sm close-alert" arial-label="Close">X</button>
+        @TempData["MensagemErro"]
+       </div>
+
+    }
+
+    <br />
     <h1 class="display-4">Listagem de Contatos</h1>
 
     <table class="table">
