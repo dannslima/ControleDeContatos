@@ -1,6 +1,9 @@
 ﻿namespace ControleDeContatos.Enums
 {
-    public class PerfilEnum
+    public enum PerfilEnum
     {
+        Admin = 1,
+        Padrao = 2,
+
     }
 }
