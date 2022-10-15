@@ -3,9 +3,11 @@ using ControleDeContatos.Repositorio;
 using ControleDeContatos.Models;
 using System.Collections.Generic;
 using System;
+using ControleDeContatos.Filters;
 
 namespace ControleDeContatos.Controllers
 {
+    [PaginaRestritaSomenteAdmin]
     public class UsuarioController : Controller
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;

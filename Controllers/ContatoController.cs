@@ -4,9 +4,11 @@ using System.Linq;
 using System.Collections.Generic;
 using ControleDeContatos.Repositorio;
 using ControleDeContatos.Models;
+using ControleDeContatos.Filters;
 
 namespace ControleDeContatos.Controllers
 {
+    [PaginaParaUsuarioLogado]
     public class ContatoController : Controller
     {
         private readonly IContatoRepositorio _contatoRepositorio;
