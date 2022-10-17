@@ -394,3 +394,4 @@ C:\Users\Danilo_Lima\Documents\PROJETOS\ControleDeContatos\ControleDeContatos\ob
 C:\Users\Danilo_Lima\Documents\PROJETOS\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\Razor\Views\Shared\Components\Menu\Default.cshtml.g.cs
 C:\Users\Danilo_Lima\Documents\PROJETOS\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\Razor\Views\Restrito\Index.cshtml.g.cs
 C:\Users\Danilo_Lima\Documents\PROJETOS\ControleDeContatos\ControleDeContatos\bin\Debug\net5.0\ref\ControleDeContatos.dll
+C:\Users\Danilo_Lima\Documents\PROJETOS\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\Razor\Views\Login\RedefinirSenha.cshtml.g.cs

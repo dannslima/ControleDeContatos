@@ -9,6 +9,7 @@ namespace ControleDeContatos.Repositorio
         UsuarioModel ListarPorId(int id);
 
         UsuarioModel? BuscarPorLogin(string login);
+        UsuarioModel? BuscarPorEmailELogin(string email, string login);
         List<UsuarioModel> BuscarTodos();
         UsuarioModel Adicionar(UsuarioModel usuario);
         UsuarioModel Atualizar(UsuarioModel usuario);

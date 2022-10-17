@@ -1,8 +1,8 @@
-﻿@model LoginModel
+﻿@model RedefinirSenhaModel
 
 @{
     Layout = "_LayoutDeslogado";
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Redefinir a Senha";
 }
 
 @if (TempData["MensagemErro"] != null)
@@ -19,7 +19,8 @@
         @TempData["MensagemSucesso"]
     </div>
 }
-<form asp-controller="Login" asp-action="Entrar" method="post">
+
+<form asp-controller="Login" asp-action="EnviarLinkParaRedefinirSenha" method="post">
 
     <div class="mb-3">
         <label for="login" class="form-label">Login</label>
@@ -27,14 +28,15 @@
         @Html.ValidationMessageFor(x => x.Login)
     </div>
     <div class="mb-3">
-        <label for="senha" class="form-label">Senha</label>
-        <input type="password" asp-for="Senha" class="form-control" id="Senha">
-        @Html.ValidationMessageFor(x => x.Senha)
+        <label for="senha" class="form-label">Email</label>
+        <input type="text" asp-for="Email" class="form-control" id="email">
+        @Html.ValidationMessageFor(x => x.Email)
     </div>
 
     <p class="mb-4 text-sm mx-auto">
         Esqueceu sua senha?
         <a asp-action="RedefinirSenha" asp-controller="Login" class="text-primary text-gradient font-weight-bold">Redefinir minha senha</a>
     </p>
-    <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+    <button type="submit" class="btn btn-primary btn-block">Redefinir Senha</button>
+    <a class="btn btn-secondary btn-block" asp-controller="Login" asp-action="Index" role="button">Voltar</a>
 </form>
