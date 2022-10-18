@@ -1,6 +1,7 @@
 ﻿using ControleDeContatos.Enums;
 using ControleDeContatos.Helper;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ControleDeContatos.Models
@@ -27,6 +28,7 @@ namespace ControleDeContatos.Models
         public DateTime DataCadastro { get; set; }
         public DateTime ? DataAtualizacao  { get; set; }
 
+        public virtual List<ContatoModel> Contatos { get; set; }
         public bool SenhaValida(string senha)
         {
             return Senha == senha.GerarHash();
@@ -43,5 +45,13 @@ namespace ControleDeContatos.Models
             Senha = novaSenha.GerarHash();
             return novaSenha;
         }
+
+        public string AtualizarSenha(string novaSenha)
+        {
+            string Senha = novaSenha.GerarHash();
+            return Senha;
+        }
+
+
     }
 }

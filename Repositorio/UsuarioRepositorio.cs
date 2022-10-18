@@ -44,7 +44,7 @@ namespace ControleDeContatos.Repositorio
         {
             UsuarioModel usuarioDB = ListarPorId(usuario.Id);
 
-            if(usuarioDB == null) throw new System.Exception("hovue um erro na atualização do contato");
+            if(usuarioDB == null) throw new System.Exception("houve um erro na atualização do contato");
 
             usuarioDB.Nome = usuario.Nome;
             usuarioDB.Email = usuario.Email;
@@ -68,6 +68,9 @@ namespace ControleDeContatos.Repositorio
             return true;
         }
 
-       
+        public UsuarioModel BuscarPorId(int id)
+        {
+            return _bancoContext.Usuarios.FirstOrDefault(x => x.Id == id);
+        }
     }
 }
