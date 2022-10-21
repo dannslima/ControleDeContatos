@@ -3,6 +3,11 @@
 
 Esse CRUD foi desenvolvido para exercitar estudos sobre .Net Core
 
+Instrution SQL SERVER:
+create database DB_SistemaContatos
+
+Instrução Entity: [PowerShell Vs code]
+Update-Database
 
 
 ## Authors
